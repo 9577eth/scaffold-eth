@@ -2,8 +2,13 @@ pragma solidity >=0.8.0 <0.9.0;
 //SPDX-License-Identifier: MIT
 
 import "hardhat/console.sol";
-// import "@openzeppelin/contracts/access/Ownable.sol"; 
+import "@openzeppelin/contracts/access/Ownable.sol"; 
 // https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol
+
+interface IGameMaker {
+  function register() external;
+  // function move(MoveDirection) external;
+}
 
 contract YourContract {
 
@@ -11,8 +16,14 @@ contract YourContract {
 
   string public purpose = "Building Unstoppable Apps!!!";
 
-  constructor() payable {
-    // what should we do on deploy?
+  IGameMaker gameMaker;
+
+  constructor(address _gameMaker) payable {
+    gameMaker = IGameMaker(_gameMaker);
+  }
+
+  function register() public {
+    gameMaker.register();
   }
 
   function setPurpose(string memory newPurpose) public {
