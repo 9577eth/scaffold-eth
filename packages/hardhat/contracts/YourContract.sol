@@ -13,8 +13,6 @@ interface IGameMaker {
 
 contract YourContract {
 
-  event SetPurpose(address sender, string purpose);
-
   IGameMaker gameMaker;
 
   constructor(address _gameMaker) payable {
