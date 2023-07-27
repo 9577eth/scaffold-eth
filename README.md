@@ -1,8 +1,10 @@
 # 🏗 Scaffold-ETH
 
+## 🚨 This repo is now in read-only mode 🚨
+
 ---
 
-🎖 Scaffold-ETH 2 is the latest version, we recommend you fork: https://github.com/scaffold-eth/scaffold-eth-2
+## 🎖 Scaffold-ETH 2 is the latest version, we recommend you fork: https://github.com/scaffold-eth/scaffold-eth-2
 
 ---
 
